@@ -5,15 +5,15 @@
 }
 
 body {
-  background-color: #F6F6F6;
+  background-color: #f6f6f6;
 }
 
 main {
   max-width: 500px;
   margin: 25px auto;
-  box-shadow: 0 5px 5px 5px #E4E4E4;
+  box-shadow: 0 5px 5px 5px #e4e4e4;
   border-radius: 0 0 8px 8px;
-  background-color: #FFFFFF;
+  background-color: #FFF;
 }
 
 input[type="text"],
@@ -22,7 +22,7 @@ input[type="text"]:focus {
   outline: none;
   font-size: large;
   width: 90%;
-} 
+}
 
 li {
   list-style: none;
@@ -32,20 +32,20 @@ li {
   border-bottom: 2px solid #efeeee;
 }
 
-span > span {
+span>span {
   padding-left: 5px;
   width: 80%;
 }
 
 .clearAll {
-  background-color: #F6F6F6;
+  background-color: #f6f6f6;
   text-align: center;
   border-radius: 0 0 8px 8px;
   font-size: larger;
   line-height: 300%;
 }
 
-.clearAll > span:hover {
+.clearAll>span:hover {
   text-decoration: underline;
   cursor: pointer;
 }

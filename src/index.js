@@ -1,6 +1,6 @@
 import './style.css';
 
-let tasks = [
+const tasks = [
   { description: 'Wash the dishes', completed: false, index: 1 },
   { description: 'Complete to do list Project', completed: true, index: 2 },
 ];
@@ -17,7 +17,7 @@ tasks.forEach((task) => {
       <i class="fa-solid fa-ellipsis-vertical dots"></i>
       <i class="fa-solid fa-trash-can hidden"></i>
     </span>
-    </li>`
+    </li>`;
   } else {
     list.innerHTML += `<li class="deleteIcon">
     <span>
@@ -28,14 +28,14 @@ tasks.forEach((task) => {
       <i class="fa-solid fa-ellipsis-vertical dots"></i>
       <i class="fa-solid fa-trash-can hidden"></i>
     </span>
-    </li>`
+    </li>`;
   }
 });
 
-let dots = document.querySelectorAll('.dots');
-let trash = document.querySelectorAll('.fa-trash-can');
-let deleteIcon = document.querySelectorAll('.deleteIcon');
-for(let i=0; i<deleteIcon.length; i++) {
+const dots = document.querySelectorAll('.dots');
+const trash = document.querySelectorAll('.fa-trash-can');
+const deleteIcon = document.querySelectorAll('.deleteIcon');
+for (let i = 0; i < deleteIcon.length; i++) {
   deleteIcon[i].addEventListener('mouseover', () => {
     dots[i].classList.add('hidden');
     trash[i].classList.remove('hidden');
