@@ -2,7 +2,7 @@
 
 <div align="center">
 
-  <h3><b>Webpack setup boilerplate</b></h3>
+  <h3><b>To Do Items List</b></h3>
 
 </div>
 
@@ -30,9 +30,9 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 Webpack boilerplate <a name="about-project"></a>
+# 📖 TODO Items' List <a name="about-project"></a>
 
-> This repo serves as a webpack boilerplate setup
+> this is a project to add, delete and update tasks to do.
 
 ## 🛠 Built With <a name="built-with"> </a>
 
@@ -46,13 +46,15 @@
 
 ### Key Features <a name="key-features"></a>
 
- <li>Boilerplate for webpack</li>
+ <li>At this point of time it is just a basic structure of "TODO list"</li>
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p><!-- LIVE DEMO -->
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- LIVE DEMO -->
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
->
+> <a href="https://dilsherb.github.io/TODO-List/dist">see live demo</a>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -64,8 +66,7 @@
 
 ### Setup
 
-> <p> git clone https://github.com/DilsherB/webpack-demo</p>
-> cd webpack-demo
+> <p> git clone https://github.com/DilsherB/TODO-List.git</p>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -97,13 +98,20 @@ To install this project in your local machine use
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-> 
+> <h3>in future I'll add following functionalities:</h3>
+<ol>
+  <li>add a task</li>
+  <li>delete a task</li>
+  <li>update a task</li>
+  <li>mark the multiple tasks completed</li>
+  <li>delete the multiple marked tasks once</li>
+</ol>
 
 ## 🤝 Contributing <a name="contributing"></a>
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/DilsherB/webpack-demo/issues).
+Feel free to check the [issues page](https://github.com/DilsherB/TODO-List/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 <!-- SUPPORT -->
