@@ -35,7 +35,7 @@ tasks.forEach((task) => {
 const dots = document.querySelectorAll('.dots');
 const trash = document.querySelectorAll('.fa-trash-can');
 const deleteIcon = document.querySelectorAll('.deleteIcon');
-for (let i = 0; i < deleteIcon.length; i++) {
+for (let i = 0; i < deleteIcon.length; i += 1) {
   deleteIcon[i].addEventListener('mouseover', () => {
     dots[i].classList.add('hidden');
     trash[i].classList.remove('hidden');

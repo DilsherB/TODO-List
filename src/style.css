@@ -13,7 +13,7 @@ main {
   margin: 25px auto;
   box-shadow: 0 5px 5px 5px #e4e4e4;
   border-radius: 0 0 8px 8px;
-  background-color: #FFF;
+  background-color: #fff;
 }
 
 input[type="text"],
@@ -32,7 +32,7 @@ li {
   border-bottom: 2px solid #efeeee;
 }
 
-span>span {
+span > span {
   padding-left: 5px;
   width: 80%;
 }
@@ -45,7 +45,7 @@ span>span {
   line-height: 300%;
 }
 
-.clearAll>span:hover {
+.clearAll > span:hover {
   text-decoration: underline;
   cursor: pointer;
 }
