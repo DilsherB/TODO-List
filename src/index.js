@@ -1,17 +1,14 @@
 import './style.css';
-
-const tasks = [
-  { description: 'Wash the dishes', completed: false, index: 1 },
-  { description: 'Complete to do list Project', completed: true, index: 2 },
-];
+import './curd.js';
+import { tasks } from './curd.js';
 
 const list = document.querySelector('#listItems');
 tasks.forEach((task) => {
   if (task.completed) {
     list.innerHTML += `<li class="deleteIcon">
     <span>
-      <input type="checkbox" id="${task.index}" checked> 
-      <span class="lm">${task.description}</span>
+      <input type="checkbox" id="${task.id}" checked> 
+      <span contenteditable="true" class="currentTask">${task.description}</span>
     </span>
     <span class="center">
       <i class="fa-solid fa-ellipsis-vertical dots"></i>
@@ -21,8 +18,8 @@ tasks.forEach((task) => {
   } else {
     list.innerHTML += `<li class="deleteIcon">
     <span>
-      <input type="checkbox" id="${task.index}"> 
-      <span class="lm">${task.description}</span>
+      <input type="checkbox" id="${task.id}"> 
+      <span contenteditable="true" class="currentTask">${task.description}</span>
     </span>
     <span class="center">
       <i class="fa-solid fa-ellipsis-vertical dots"></i>
@@ -33,8 +30,10 @@ tasks.forEach((task) => {
 });
 
 const dots = document.querySelectorAll('.dots');
-const trash = document.querySelectorAll('.fa-trash-can');
+let trash = document.querySelectorAll('.fa-trash-can');
 const deleteIcon = document.querySelectorAll('.deleteIcon');
+const checkbox = document.querySelectorAll('input[type="checkbox"]');
+const currentTask = document.querySelectorAll('.currentTask')
 for (let i = 0; i < deleteIcon.length; i += 1) {
   deleteIcon[i].addEventListener('mouseover', () => {
     dots[i].classList.add('hidden');
@@ -43,5 +42,27 @@ for (let i = 0; i < deleteIcon.length; i += 1) {
   deleteIcon[i].addEventListener('mouseout', () => {
     dots[i].classList.remove('hidden');
     trash[i].classList.add('hidden');
+  });
+  trash[i].addEventListener('click', () => {
+    tasks.splice(i, 1);
+    localStorage.setItem('newItem', JSON.stringify(tasks));
+    window.location.reload();
+  });
+  checkbox[i].addEventListener('input', () => {
+    if (tasks[i].completed) {
+      tasks[i].completed = false;
+      currentTask[i].classList.remove('strike');
+    } else {
+      tasks[i].completed = true;
+      currentTask[i].classList.add('strike');
+    }
+    localStorage.setItem('newItem', JSON.stringify(tasks));
+  });
+  currentTask[i].addEventListener('keydown', (e) => {
+    if (e.code === 'Enter') {
+      tasks[i].description = currentTask[i].innerHTML;
+      localStorage.setItem('newItem', JSON.stringify(tasks));
+      window.location.reload();
+    }
   });
 }
