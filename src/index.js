@@ -1,6 +1,5 @@
 import './style.css';
-import './curd.js';
-import { tasks } from './curd.js';
+import tasks from './curd.js';
 
 const list = document.querySelector('#listItems');
 tasks.forEach((task) => {
@@ -30,10 +29,10 @@ tasks.forEach((task) => {
 });
 
 const dots = document.querySelectorAll('.dots');
-let trash = document.querySelectorAll('.fa-trash-can');
+const trash = document.querySelectorAll('.fa-trash-can');
 const deleteIcon = document.querySelectorAll('.deleteIcon');
 const checkbox = document.querySelectorAll('input[type="checkbox"]');
-const currentTask = document.querySelectorAll('.currentTask')
+const currentTask = document.querySelectorAll('.currentTask');
 for (let i = 0; i < deleteIcon.length; i += 1) {
   deleteIcon[i].addEventListener('mouseover', () => {
     dots[i].classList.add('hidden');
