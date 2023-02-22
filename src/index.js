@@ -44,7 +44,7 @@ for (let i = 0; i < deleteIcon.length; i += 1) {
   });
   trash[i].addEventListener('click', () => {
     tasks.splice(i, 1);
-    tasks.forEach((e, i) => e.id = i + 1);
+    tasks.forEach((e, i) => e.id = i + 1); // eslint-disable-line
     localStorage.setItem('newItem', JSON.stringify(tasks));
     window.location.reload();
   });
