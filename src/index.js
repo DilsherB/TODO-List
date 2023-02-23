@@ -1,4 +1,5 @@
 import './style.css';
+import './clearAll.js';
 import tasks from './curd.js';
 
 const list = document.querySelector('#listItems');
@@ -33,7 +34,7 @@ const trash = document.querySelectorAll('.fa-trash-can');
 const deleteIcon = document.querySelectorAll('.deleteIcon');
 const checkbox = document.querySelectorAll('input[type="checkbox"]');
 const currentTask = document.querySelectorAll('.currentTask');
-for (let i = 0; i < deleteIcon.length; i += 1) {
+for (let i = 0; i < checkbox.length; i += 1) {
   deleteIcon[i].addEventListener('mouseover', () => {
     dots[i].classList.add('hidden');
     trash[i].classList.remove('hidden');
@@ -48,7 +49,7 @@ for (let i = 0; i < deleteIcon.length; i += 1) {
     localStorage.setItem('newItem', JSON.stringify(tasks));
     window.location.reload();
   });
-  checkbox[i].addEventListener('input', () => {
+  checkbox[i].addEventListener('change', () => {
     if (tasks[i].completed) {
       tasks[i].completed = false;
       currentTask[i].classList.remove('strike');
