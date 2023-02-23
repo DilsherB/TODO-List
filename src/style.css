@@ -33,7 +33,7 @@ li {
 }
 
 span > span {
-  padding-left: 5px;
+  margin-left: 5px;
   width: 80%;
 }
 
@@ -57,4 +57,9 @@ span > span {
 .center {
   width: 2%;
   text-align: center;
+  cursor: pointer;
+}
+
+.strike {
+  text-decoration: line-through;
 }
