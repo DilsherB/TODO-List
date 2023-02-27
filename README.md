@@ -45,7 +45,7 @@
 <!-- Features -->
 
 ### Key Features <a name="key-features"></a>
-  <ol>You can: 
+  <ol><h2>You can:</h2>
  <li>Add task</li>
  <li>Update task</li>
  <li>Delete task</li>
