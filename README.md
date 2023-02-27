@@ -45,8 +45,12 @@
 <!-- Features -->
 
 ### Key Features <a name="key-features"></a>
-
- <li>At this point of time it is just a basic structure of "TODO list"</li>
+  <ol>You can: 
+ <li>Add task</li>
+ <li>Update task</li>
+ <li>Delete task</li>
+ <li>Delete all selected/completed tasks</li>
+ </ol>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
