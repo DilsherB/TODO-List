@@ -45,8 +45,12 @@
 <!-- Features -->
 
 ### Key Features <a name="key-features"></a>
-
- <li>At this point of time it is just a basic structure of "TODO list"</li>
+  <ol><h3>You can:</h3>
+ <li>Add task</li>
+ <li>Update task</li>
+ <li>Delete task</li>
+ <li>Delete all selected/completed tasks</li>
+ </ol>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -54,7 +58,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-> <a href="https://dilsherb.github.io/TODO-List/dist">see live demo</a>
+> <a href="https://dilsherb.github.io/TODO-List/dist">Click to See live demo</a>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -100,11 +104,9 @@ To install this project in your local machine use
 
 > <h3>in future I'll add following functionalities:</h3>
 <ol>
-  <li>add a task</li>
-  <li>delete a task</li>
-  <li>update a task</li>
-  <li>mark the multiple tasks completed</li>
-  <li>delete the multiple marked tasks once</li>
+  <li>Some styling will be added.</li>
+  <li>Database will be used instead of LocalStorage.</li>
+  <li>Will be converted to a mobile app also</li>
 </ol>
 
 ## 🤝 Contributing <a name="contributing"></a>
