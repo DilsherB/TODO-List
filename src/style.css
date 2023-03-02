@@ -16,6 +16,10 @@ main {
   background-color: #fff;
 }
 
+.fa-angle-down {
+  cursor: pointer;
+}
+
 input[type="text"],
 input[type="text"]:focus {
   border: none;

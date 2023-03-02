@@ -1,6 +1,6 @@
 import './style.css';
-import clear from './clearAll.js';
-import tasks from './curd.js';
+import { callingFuncs } from './modules/callFuncs.js';
+import tasks from './modules/storage.js';
 
 const list = document.querySelector('#listItems');
 tasks.forEach((task) => {
@@ -28,4 +28,4 @@ tasks.forEach((task) => {
     </li>`;
   }
 });
-clear();
+callingFuncs();
