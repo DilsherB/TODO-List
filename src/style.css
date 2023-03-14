@@ -5,15 +5,19 @@
 }
 
 body {
-  background-color: #f6f6f6;
+  display: flex;
+  background-image: url('./modules/images/todobg.png');
+  background-size: cover;
 }
 
-main {
-  max-width: 500px;
+#main {
+  min-width: 500px;
   margin: 25px auto;
   box-shadow: 0 5px 5px 5px #e4e4e4;
   border-radius: 0 0 8px 8px;
   background-color: #fff;
+  /* background-image: url('./modules/images/todo\ list\ bg.jpg');
+  background-position-y: 14%; */
 }
 
 .fa-angle-down {

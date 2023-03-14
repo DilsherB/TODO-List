@@ -1,10 +1,10 @@
 {
-  "name": "set-up-webpack",
+  "name": "todo",
   "version": "1.0.0",
-  "description": "This is a repo to learn how to set up webpack",
+  "description": "This is a simple 'Todo app'",
   "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "start": "webpack serve --open",
     "build": "webpack"
   },
@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/rica213/set-up-webpack#readme",
   "devDependencies": {
+    "@babel/plugin-transform-modules-commonjs": "^7.21.2",
     "babel-eslint": "^10.1.0",
     "css-loader": "^6.7.3",
     "eslint": "^7.32.0",
