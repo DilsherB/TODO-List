@@ -1,5 +1,7 @@
 import tasks from './storage.js';
-import { showTrashIcon, hideTrashIcon, updateTask, removeTask, trueFalse, clearAllSelected, gettask } from './functions.js';
+import {
+  showTrashIcon, hideTrashIcon, updateTask, removeTask, trueFalse, clearAllSelected, gettask,
+} from './functions.js';
 
 const callingFuncs = () => {
   const clearAll = document.querySelector('.clearAll');
@@ -13,7 +15,7 @@ const callingFuncs = () => {
     trash[i].addEventListener('click', () => removeTask(tasks, i));
     checkbox[i].addEventListener('change', () => trueFalse(tasks, i));
     currentTask[i].addEventListener('keydown', (e) => {
-      if (e.code === 'Enter') updateTask(tasks, i)
+      if (e.code === 'Enter') updateTask(tasks, i);
     });
     clearAll.addEventListener('click', () => clearAllSelected(tasks));
   }
@@ -21,6 +23,6 @@ const callingFuncs = () => {
   document.querySelector('.newItem').addEventListener('keydown', (e) => {
     if (e.code === 'Enter') gettask(tasks);
   });
-}
+};
 
-export { callingFuncs };
+export default callingFuncs;

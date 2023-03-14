@@ -1,5 +1,5 @@
 import './style.css';
-import { callingFuncs } from './modules/callFuncs.js';
+import callingFuncs from './modules/callFuncs.js';
 import tasks from './modules/storage.js';
 
 const list = document.querySelector('#listItems');
